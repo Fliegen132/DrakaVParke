@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: BabushkaHead
+    m_Hash: 596854532
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Head1
+      m_Hash: 990112810
+      m_Sprite: {fileID: -6160636534275292848, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6160636534275292848, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    - m_Name: HeadRotation1
+      m_Hash: 1021981958
+      m_Sprite: {fileID: -5521152170337199806, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5521152170337199806, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    - m_Name: HeadRotation2
+      m_Hash: 635659452
+      m_Sprite: {fileID: -1291777968124768023, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1291777968124768023, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    - m_Name: HeadRotation3
+      m_Hash: 316953642
+      m_Sprite: {fileID: -7605399821558395075, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7605399821558395075, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: BabushkaBody
+    m_Hash: 533248554
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Body1
+      m_Hash: 665434648
+      m_Sprite: {fileID: -1304209153760836533, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1304209153760836533, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: BabushkaLHand
+    m_Hash: 44311611
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Lhand1
+      m_Hash: 830902253
+      m_Sprite: {fileID: 484485192436566280, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 484485192436566280, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: BabushkaLShoulder
+    m_Hash: 1007760765
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Lshould1
+      m_Hash: 875979685
+      m_Sprite: {fileID: 3708076528982724361, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3708076528982724361, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: BabushkaRShoulder
+    m_Hash: 403942558
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Rshould1
+      m_Hash: 487014588
+      m_Sprite: {fileID: -1398943311578815795, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1398943311578815795, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: BabushkaRhand
+    m_Hash: 1028039398
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Rhand1
+      m_Hash: 140176390
+      m_Sprite: {fileID: -7190213945617657215, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7190213945617657215, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: BabushkaLleg
+    m_Hash: 507871074
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Lleg1
+      m_Hash: 531627647
+      m_Sprite: {fileID: 8811396506324079273, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8811396506324079273, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    - m_Name: Lleg1_2
+      m_Hash: 110077801
+      m_Sprite: {fileID: -2828706877188830852, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2828706877188830852, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: BabushkaRleg
+    m_Hash: 780361678
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Rleg1
+      m_Hash: 8378268
+      m_Sprite: {fileID: 1618242468183071396, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1618242468183071396, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    - m_Name: Rleg1_2
+      m_Hash: 829309178
+      m_Sprite: {fileID: -1802952236887583926, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1802952236887583926, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: BabushkaNeck
+    m_Hash: 611411915
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Neck1
+      m_Hash: 811585835
+      m_Sprite: {fileID: 4387499097717842862, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4387499097717842862, guid: 71998885a53d2fa48bd3cb635e0568ce, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638458395951045362
+  m_Version: 1

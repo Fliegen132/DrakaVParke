@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d11b34fb-1524-4848-9896-8be58687e687" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ContentSizeFitter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Architecture/TestGizmos.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Effect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/EnemySubs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Architecture/ServiceLocator/ServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Menu/SkinSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Player/ViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Weapons/Scripts/WeaponBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Scripts/Behaviour/UnitBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/ICreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/GunHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Scripts/Behaviour/Unit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/PlayGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Architecture/GameBehaviour/UnitList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Menu/Boom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/631FBC85-9494-417A-9E8B-DA179EA266F0/18/77a6841f/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Architecture/GameBehaviour/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/Create.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/UnitCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Scripts/Behaviour/DangeDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Scripts/AnimationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/EnemyCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/PlayerCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Input/IInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/GameBehaviour/UnitList.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Effect.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Weapons/Scripts/WeaponBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/GameBehaviour/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/EnemySubs.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/TestGizmos.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/GunHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Scripts/Behaviour/UnitBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/ServiceLocator/ServiceLocator.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/ServiceLocator/IService.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/ServiceLocator/GAMEPLAY_SERVICELOCATOR.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Player/ViewHP.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Player/ViewModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/ChooserTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Menu/ChooserTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Menu/Boom.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Scripts/Behaviour/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Menu/DataMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/ICreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/Enemy/PigeonCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Menu/CharacterChooser.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/Player/BabushkaCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/PlayGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/StartGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Menu/SkinSelector.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/Player/CatCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Input/DesktopInput.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2dlMz2gMA01rLju19bj2TDuCVOx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35010824" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29978356" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../DrakaV\My project (13).exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Flieg\OneDrive\Рабочий стол\DrakaV" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d11b34fb-1524-4848-9896-8be58687e687" name="Default Changelist" comment="" />
+      <created>1710578475771</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710578475771</updated>
+      <workItem from="1710578489432" duration="12692000" />
+      <workItem from="1710652741055" duration="25710000" />
+      <workItem from="1710737990914" duration="21577000" />
+      <workItem from="1710852907184" duration="3747000" />
+      <workItem from="1710861009090" duration="14222000" />
+      <workItem from="1710911617404" duration="5142000" />
+      <workItem from="1710948634071" duration="12073000" />
+      <workItem from="1711042712242" duration="4953000" />
+      <workItem from="1711090170007" duration="15407000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1879" height="375" key="GridCell.Tab.0.bottom" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.0.center" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.0.left" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.0.right" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.1.bottom" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.1.center" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.1.left" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.1.right" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.2.bottom" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.2.center" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.2.left" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.2.right" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.3.bottom" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.3.center" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.3.left" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state width="1879" height="375" key="GridCell.Tab.3.right" timestamp="1710965083595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="375" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710965083595" />
+    <state x="754" y="239" key="RiderGenerateDialog" timestamp="1710741342534">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="754" y="239" key="RiderGenerateDialog/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710741342534" />
+    <state x="491" y="165" key="SettingsEditor" timestamp="1710610864579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="491" y="165" key="SettingsEditor/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1710610864579" />
+  </component>
+</project>
