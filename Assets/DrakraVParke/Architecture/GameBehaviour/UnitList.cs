@@ -7,7 +7,7 @@ namespace DrakaVParke.Architecture
     public static class UnitList
     {
        public static List<Unit> Enemy = new List<Unit>();
+       public static GameObject EnemyBall;
        public static GameObject Player;
     }
-
 }

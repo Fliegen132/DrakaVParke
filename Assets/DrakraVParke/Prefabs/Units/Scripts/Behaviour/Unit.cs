@@ -12,8 +12,6 @@ namespace DrakraVParke.Units
         {
             _rb = GetComponent<Rigidbody2D>();
             _rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
-
-            
             _unit = unit;
         }
 

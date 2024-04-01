@@ -2,6 +2,7 @@ using System;
 using DrakraVParke.Architecture.Menu;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class CharacterChooser : MonoBehaviour
 {
@@ -14,9 +15,10 @@ public class CharacterChooser : MonoBehaviour
     private string _characterName;
     [SerializeField] private TextMeshProUGUI characterNameText;
     [SerializeField] private GameObject[] booms;
+    [SerializeField] private SkinSelector _skinSelector;
     private void Awake()
     {
-        DataMenu.heroName = "Babushka";
+        DataMenu.HeroName = "Babushka";
     }
 
     private void Update()
@@ -79,6 +81,7 @@ public class CharacterChooser : MonoBehaviour
         currentChooseSkin.GetChild(currentSkin).gameObject.SetActive(setActive);
         _characterName = currentChooseSkin.GetChild(currentSkin).gameObject.name;
         characterNameText.text = _characterName;
-        DataMenu.heroName = _characterName;
+        DataMenu.HeroName = _characterName;
+        _skinSelector.Init();
     }
 }

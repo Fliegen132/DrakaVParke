@@ -36,16 +36,16 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 5338434605226724565}
-    m_Position: {x: -530, y: 590, z: 0}
+    m_Position: {x: -570, y: 610, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7720828872731201486}
-    m_Position: {x: -530, y: 640, z: 0}
+    m_Position: {x: -550, y: 710, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4662577852369061560}
-    m_Position: {x: -140, y: 700, z: 0}
+    m_Position: {x: -170, y: 720, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7054206815001097748}
-    m_Position: {x: -610, y: 480, z: 0}
+    m_Position: {x: -710, y: 420, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7201951600582221341}
     m_Position: {x: -580, y: 220, z: 0}
@@ -54,7 +54,7 @@ AnimatorStateMachine:
     m_Position: {x: 80, y: 420, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8304664340690198885}
-    m_Position: {x: -330, y: 620, z: 0}
+    m_Position: {x: -320, y: 610, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2013136410535913402}
     m_Position: {x: 20, y: 650, z: 0}
@@ -63,7 +63,7 @@ AnimatorStateMachine:
     m_Position: {x: -290, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1734943782157914468}
-    m_Position: {x: 20, y: 260, z: 0}
+    m_Position: {x: 10, y: 280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8907744474253985849}
     m_Position: {x: -10, y: 180, z: 0}
@@ -254,12 +254,6 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: AttackNoGun
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: Dead
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0

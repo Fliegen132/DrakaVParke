@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/DrakraVParke/Scenes/BootstrapScene.unity
+    guid: c3f5fbed582a80d498c250c0ce89baae
+  - enabled: 1
+    path: Assets/DrakraVParke/Scenes/AchivementsScene.unity
+    guid: b1bbd195056278c43b82aefd7261a84e
+  - enabled: 1
     path: Assets/DrakraVParke/Scenes/MainMenu.unity
     guid: 8db572792f02f904ebaa81a5150d39a6
   - enabled: 1

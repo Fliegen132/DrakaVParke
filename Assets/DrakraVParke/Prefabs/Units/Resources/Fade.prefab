@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2688539645877170984}
   - component: {fileID: 504881270437868372}
+  - component: {fileID: 7888546791336218122}
   m_Layer: 0
   m_Name: Fade
   m_TagString: Untagged
@@ -84,3 +85,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7888546791336218122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964745847143088060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d362441dd6e02024fafadc04d49b6eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

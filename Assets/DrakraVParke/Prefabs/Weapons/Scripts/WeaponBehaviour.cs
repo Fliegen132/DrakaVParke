@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using DrakraVParke.Units;
 using UnityEngine;
 
@@ -7,11 +8,13 @@ public class WeaponBehaviour : MonoBehaviour
     public bool use;
     private Animator _animator;
     public bool CanDamage = false;
+    public bool throwGun;
     private void Awake()
     {
         _animator = GetComponent<Animator>();
         use = true;
     }
+
 
     public void SetState()
     {
@@ -31,6 +34,7 @@ public class WeaponBehaviour : MonoBehaviour
             _animator.SetBool("Rotate", false);
             transform.GetChild(0).gameObject.SetActive(false);
         }
+        
     }
 
     public void SetParent(Transform parent)
@@ -44,6 +48,17 @@ public class WeaponBehaviour : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(false);
     }
 
+    public void EnableGun()
+    {
+        StartCoroutine(EnableGO());
+    }
+
+    private IEnumerator EnableGO()
+    {
+        yield return new WaitForSeconds(4f);
+        Destroy(gameObject);
+    }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(!CanDamage)
@@ -53,5 +68,19 @@ public class WeaponBehaviour : MonoBehaviour
             collision.gameObject.GetComponent<Unit>().GetBehaviour().TakeDamage(1, DamageType.Default);
             Destroy(gameObject);
         }
+    }
+
+    public void Throw(Vector2 throwDirection)
+    {
+        gameObject.transform.SetParent(null);
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.3f, gameObject.transform.position.z -3);
+        CanDamage = true;
+        GetComponent<BoxCollider2D>().enabled = true;
+        GetComponent<Rigidbody2D>().simulated = true; 
+        GetComponent<Rigidbody2D>().gravityScale = 0; 
+        GetComponent<Rigidbody2D>().velocity = throwDirection * 10; 
+        EnableGun();
+        throwGun = true;
+        _animator.Play("ThrowRotate");
     }
 }

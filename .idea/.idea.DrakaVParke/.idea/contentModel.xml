@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\GitProjects\DrakaVParke" t="IncludeRecursive">
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Animation" t="Include">
+          <e p="Enemies" t="Include">
+            <e p="Pigeon" t="Include" />
+            <e p="Rat" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="Babushka" t="Include" />
+            <e p="Cat" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Desk" t="Include" />
+            <e p="Mobile" t="Include" />
+          </e>
+          <e p="VFX" t="Include" />
+        </e>
+        <e p="DrakraVParke" t="Include">
+          <e p="Architecture" t="Include">
+            <e p="Achievements" t="Include">
+              <e p="AchievementsManager.cs" t="Include" />
+            </e>
+            <e p="Bootstrap" t="Include">
+              <e p="Bootstrap.cs" t="Include" />
+            </e>
+            <e p="GameBehaviour" t="Include">
+              <e p="GameManager.cs" t="Include" />
+              <e p="NightSwitch.cs" t="Include" />
+              <e p="UnitList.cs" t="Include" />
+            </e>
+            <e p="Menu" t="Include">
+              <e p="Boom.cs" t="Include" />
+              <e p="CharacterChooser.cs" t="Include" />
+              <e p="DataMenu.cs" t="Include" />
+            </e>
+            <e p="ServiceLocator" t="Include">
+              <e p="GAMEPLAY_SERVICELOCATOR.cs" t="Include" />
+              <e p="IService.cs" t="Include" />
+              <e p="MAINMENU_SERVICELOCATOR.cs" t="Include" />
+              <e p="ServiceLocator.cs" t="Include" />
+            </e>
+            <e p="StartGame.cs" t="Include" />
+            <e p="TestGizmos.cs" t="Include" />
+            <e p="UnitCreator" t="Include">
+              <e p="Enemy" t="Include">
+                <e p="BallCreator.cs" t="Include" />
+                <e p="PigeonCreator.cs" t="Include" />
+                <e p="RatCreator.cs" t="Include" />
+              </e>
+              <e p="ICreator.cs" t="Include" />
+              <e p="Player" t="Include">
+                <e p="BabushkaCreator.cs" t="Include" />
+                <e p="CatCreator.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Fonts" t="Include" />
+          <e p="Prefabs" t="Include">
+            <e p="Camera" t="Include">
+              <e p="Animation" t="Include" />
+            </e>
+            <e p="Heart" t="Include">
+              <e p="Resources" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="HeartBehaviour.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Locations" t="Include">
+              <e p="Image" t="Include" />
+            </e>
+            <e p="Menu" t="Include">
+              <e p="Animation" t="Include" />
+              <e p="CharacterTouch.cs" t="Include" />
+              <e p="Skins" t="Include" />
+              <e p="SkinSelector.cs" t="Include" />
+            </e>
+            <e p="Units" t="Include">
+              <e p="Enemy" t="Include">
+                <e p="Animation" t="Include">
+                  <e p="Ball" t="Include" />
+                  <e p="Pigeon" t="Include" />
+                  <e p="Rat" t="Include" />
+                </e>
+                <e p="Effects" t="Include">
+                  <e p="Resources" t="Include" />
+                </e>
+                <e p="Resources" t="Include" />
+                <e p="Scripts" t="Include">
+                  <e p="Ball" t="Include">
+                    <e p="Ball.cs" t="Include" />
+                    <e p="EnemyBall.cs" t="Include" />
+                  </e>
+                  <e p="Enemy.cs" t="Include" />
+                  <e p="EnemySubs.cs" t="Include" />
+                  <e p="GunHandler.cs" t="Include" />
+                  <e p="HeartCarrier.cs" t="Include" />
+                  <e p="SkinRandomize.cs" t="Include" />
+                </e>
+                <e p="Sprites" t="Include" />
+              </e>
+              <e p="ParticleMaterial" t="Include" />
+              <e p="Player" t="Include">
+                <e p="Animation" t="Include">
+                  <e p="Babushka" t="Include" />
+                  <e p="Cat" t="Include" />
+                  <e p="Scripts" t="Include" />
+                </e>
+                <e p="Effects" t="Include">
+                  <e p="Resources" t="Include" />
+                </e>
+                <e p="Resources" t="Include" />
+                <e p="Scripts" t="Include">
+                  <e p="Input" t="Include">
+                    <e p="DesktopInput.cs" t="Include" />
+                    <e p="IInput.cs" t="Include" />
+                    <e p="MobileInput.cs" t="Include" />
+                  </e>
+                  <e p="Player.cs" t="Include" />
+                  <e p="Tutorial.cs" t="Include" />
+                  <e p="Unblik.cs" t="Include" />
+                </e>
+                <e p="Sprites" t="Include" />
+              </e>
+              <e p="Resources" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="AnimationController.cs" t="Include" />
+                <e p="Behaviour" t="Include">
+                  <e p="Unit.cs" t="Include" />
+                  <e p="UnitBehaviour.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Weapons" t="Include">
+              <e p="Animation" t="Include" />
+              <e p="Resources" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="WeaponBehaviour.cs" t="Include" />
+              </e>
+              <e p="Sprites" t="Include" />
+            </e>
+          </e>
+          <e p="Scenes" t="Include" />
+          <e p="Sound" t="Include">
+            <e p="Resources" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Image" t="Include">
+              <e p="Animation" t="Include" />
+              <e p="Cursors" t="Include" />
+              <e p="LifeBar" t="Include">
+                <e p="Resources" t="Include">
+                  <e p="BabushkaIcon" t="Include" />
+                  <e p="CatIcon" t="Include" />
+                </e>
+              </e>
+              <e p="Resources" t="Include">
+                <e p="Icon" t="Include" />
+              </e>
+            </e>
+            <e p="Resources" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="Achievements" t="Include">
+                <e p="AchievementsDescription.cs" t="Include" />
+                <e p="AchievementsView.cs" t="Include" />
+                <e p="DoneChecker.cs" t="Include" />
+              </e>
+              <e p="Effect.cs" t="Include" />
+              <e p="EndGame.cs" t="Include" />
+              <e p="Menu" t="Include">
+                <e p="Coins" t="Include">
+                  <e p="CoinsModel.cs" t="Include" />
+                  <e p="ViewCoins.cs" t="Include" />
+                </e>
+                <e p="PlayGame.cs" t="Include" />
+                <e p="ViewBuySkin.cs" t="Include" />
+              </e>
+              <e p="Player" t="Include">
+                <e p="ViewHP.cs" t="Include" />
+                <e p="ViewModel.cs" t="Include" />
+              </e>
+              <e p="Score" t="Include">
+                <e p="ModelScore.cs" t="Include" />
+                <e p="ViewModelScore.cs" t="Include" />
+                <e p="ViewScore.cs" t="Include" />
+              </e>
+              <e p="StatsView.cs" t="Include" />
+              <e p="TimerView.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Examples" t="Include">
+          <e p="Fonts" t="Include" />
+          <e p="Music" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="AdvertisementPanel.cs" t="Include" />
+            <e p="DevicePanel.cs" t="Include" />
+            <e p="Example.cs" t="Include" />
+            <e p="LeaderboardPanel.cs" t="Include" />
+            <e p="PaymentsPanel.cs" t="Include" />
+            <e p="PlatformPanel.cs" t="Include" />
+            <e p="PlayerPanel.cs" t="Include" />
+            <e p="RemoteConfigPanel.cs" t="Include" />
+            <e p="SocialPanel.cs" t="Include" />
+            <e p="StoragePanel.cs" t="Include" />
+          </e>
+        </e>
+        <e p="FadeBehavour.cs" t="Include" />
+        <e p="InstantGamesBridge" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Bridge.cs" t="Include" />
+            <e p="Common" t="Include">
+              <e p="JsonHelper.cs" t="Include" />
+              <e p="PlatformId.cs" t="Include" />
+              <e p="Singleton.cs" t="Include" />
+            </e>
+            <e p="Modules" t="Include">
+              <e p="Advertisement" t="Include">
+                <e p="AdvertisementModule.cs" t="Include" />
+                <e p="BannerState.cs" t="Include" />
+                <e p="InterstitialState.cs" t="Include" />
+                <e p="RewardedState.cs" t="Include" />
+                <e p="ShowBannerPlatformDependedOptions.cs" t="Include" />
+                <e p="ShowBannerVkOptions.cs" t="Include" />
+                <e p="VkBannerPosition.cs" t="Include" />
+              </e>
+              <e p="Device" t="Include">
+                <e p="DeviceModule.cs" t="Include" />
+                <e p="DeviceType.cs" t="Include" />
+              </e>
+              <e p="Game" t="Include">
+                <e p="GameModule.cs" t="Include" />
+                <e p="VisibilityState.cs" t="Include" />
+              </e>
+              <e p="Leaderboard" t="Include">
+                <e p="GetEntriesPlatformDependedOptions.cs" t="Include" />
+                <e p="GetEntriesYandexOptions.cs" t="Include" />
+                <e p="GetScorePlatformDependedOptions.cs" t="Include" />
+                <e p="GetScoreYandexOptions.cs" t="Include" />
+                <e p="LeaderboardEntry.cs" t="Include" />
+                <e p="LeaderboardModule.cs" t="Include" />
+                <e p="SetScorePlatformDependedOptions.cs" t="Include" />
+                <e p="SetScoreYandexOptions.cs" t="Include" />
+                <e p="ShowNativePopupPlatformDependedOptions.cs" t="Include" />
+                <e p="ShowNativePopupVkOptions.cs" t="Include" />
+              </e>
+              <e p="Payments" t="Include">
+                <e p="PaymentsCatalogItemData.cs" t="Include" />
+                <e p="PaymentsModule.cs" t="Include" />
+                <e p="PaymentsPurchaseData.cs" t="Include" />
+              </e>
+              <e p="Platform" t="Include">
+                <e p="PlatformMessage.cs" t="Include" />
+                <e p="PlatformModule.cs" t="Include" />
+              </e>
+              <e p="PlatformDependedOptionsBase.cs" t="Include" />
+              <e p="Player" t="Include">
+                <e p="AuthorizePlatformDependedOptions.cs" t="Include" />
+                <e p="AuthorizeYandexOptions.cs" t="Include" />
+                <e p="PlayerModule.cs" t="Include" />
+              </e>
+              <e p="RemoteConfig" t="Include">
+                <e p="RemoteConfigClientFeature.cs" t="Include" />
+                <e p="RemoteConfigGetPlatformDependedOptions.cs" t="Include" />
+                <e p="RemoteConfigGetYandexOptions.cs" t="Include" />
+                <e p="RemoteConfigModule.cs" t="Include" />
+                <e p="RemoteConfigValue.cs" t="Include" />
+              </e>
+              <e p="Social" t="Include">
+                <e p="CreatePostPlatformDependedOptions.cs" t="Include" />
+                <e p="CreatePostVkOptions.cs" t="Include" />
+                <e p="JoinCommunityPlatformDependedOptions.cs" t="Include" />
+                <e p="JoinCommunityVkOptions.cs" t="Include" />
+                <e p="SharePlatformDependedOptions.cs" t="Include" />
+                <e p="ShareVkOptions.cs" t="Include" />
+                <e p="SocialModule.cs" t="Include" />
+              </e>
+              <e p="Storage" t="Include">
+                <e p="StorageModule.cs" t="Include" />
+                <e p="StorageType.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include" />
+        <e p="Prefab" t="Include">
+          <e p="Enemies" t="Include" />
+          <e p="Player" t="Include">
+            <e p="BabushkaSkins" t="Include" />
+            <e p="CatSkins" t="Include" />
+          </e>
+          <e p="UI" t="Include" />
+        </e>
+        <e p="Sprites" t="Include">
+          <e p="Enemies" t="Include" />
+          <e p="Other" t="Include" />
+          <e p="Player" t="Include">
+            <e p="Skins" t="Include">
+              <e p="BabushkaSkins" t="Include" />
+              <e p="CatSkins" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Documentation" t="Include" />
+          <e p="Examples &amp; Extras" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="Anton OFL.txt" t="Include" />
+              <e p="Bangers - OFL.txt" t="Include" />
+              <e p="Oswald-Bold - OFL.txt" t="Include" />
+            </e>
+            <e p="Materials" t="Include" />
+            <e p="Prefabs" t="Include" />
+            <e p="Resources" t="Include">
+              <e p="Color Gradient Presets" t="Include" />
+              <e p="Fonts &amp; Materials" t="Include" />
+              <e p="Sprite Assets" t="Include" />
+            </e>
+            <e p="Scenes" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="Benchmark01.cs" t="Include" />
+              <e p="Benchmark01_UGUI.cs" t="Include" />
+              <e p="Benchmark02.cs" t="Include" />
+              <e p="Benchmark03.cs" t="Include" />
+              <e p="Benchmark04.cs" t="Include" />
+              <e p="CameraController.cs" t="Include" />
+              <e p="ChatController.cs" t="Include" />
+              <e p="DropdownSample.cs" t="Include" />
+              <e p="EnvMapAnimator.cs" t="Include" />
+              <e p="ObjectSpin.cs" t="Include" />
+              <e p="ShaderPropAnimator.cs" t="Include" />
+              <e p="SimpleScript.cs" t="Include" />
+              <e p="SkewTextExample.cs" t="Include" />
+              <e p="TeleType.cs" t="Include" />
+              <e p="TextConsoleSimulator.cs" t="Include" />
+              <e p="TextMeshProFloatingText.cs" t="Include" />
+              <e p="TextMeshSpawner.cs" t="Include" />
+              <e p="TMP_DigitValidator.cs" t="Include" />
+              <e p="TMP_ExampleScript_01.cs" t="Include" />
+              <e p="TMP_FrameRateCounter.cs" t="Include" />
+              <e p="TMP_PhoneNumberValidator.cs" t="Include" />
+              <e p="TMP_TextEventCheck.cs" t="Include" />
+              <e p="TMP_TextEventHandler.cs" t="Include" />
+              <e p="TMP_TextInfoDebugTool.cs" t="Include" />
+              <e p="TMP_TextSelector_A.cs" t="Include" />
+              <e p="TMP_TextSelector_B.cs" t="Include" />
+              <e p="TMP_UiFrameRateCounter.cs" t="Include" />
+              <e p="TMPro_InstructionOverlay.cs" t="Include" />
+              <e p="VertexColorCycler.cs" t="Include" />
+              <e p="VertexJitter.cs" t="Include" />
+              <e p="VertexShakeA.cs" t="Include" />
+              <e p="VertexShakeB.cs" t="Include" />
+              <e p="VertexZoom.cs" t="Include" />
+              <e p="WarpTextExample.cs" t="Include" />
+            </e>
+            <e p="Sprites" t="Include" />
+            <e p="Textures" t="Include" />
+          </e>
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="Fonts &amp; Materials" t="Include" />
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Sprite Assets" t="Include" />
+            <e p="Style Sheets" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+            <e p="EmojiOne.json" t="Include" />
+          </e>
+        </e>
+        <e p="WebGLTemplates" t="Include">
+          <e p="Bridge" t="Include" />
+        </e>
+      </e>
+      <e p="DrakaVParke.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\Flieg\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Flieg\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_DrakaVParke.-1288374171.00" t="ExcludeRecursive" />
+  </component>
+</project>

@@ -1,4 +1,4 @@
-﻿using System;
+﻿using _2048Figure.Architecture.ServiceLocator;
 using UnityEngine;
 
 namespace DrakraVParke.Units
@@ -14,10 +14,21 @@ namespace DrakraVParke.Units
     {
         private int m_hp;
         protected GameObject unit;
-        public Action @Action;
         public string Name;
 
         protected bool dead = false;
+
+        private ViewModelScore _viewModelScore;
+        public UnitBehaviour()
+        {
+            _viewModelScore = ServiceLocator.current.Get<ViewModelScore>();
+        }
+
+        public virtual void Init()
+        {
+            
+        }
+
         public virtual void TakeDamage(int damage, DamageType type)
         {
             m_hp -= damage;
@@ -32,13 +43,23 @@ namespace DrakraVParke.Units
 
         protected virtual void Dead()
         {
-            dead = true;
-            //dead
+            _viewModelScore.UpdateScore();
+            AchievementsManager.IncreaseKillCount(Name);
         }
-        
+        public void AddHP(int newHP)
+        {
+            m_hp += newHP;
+            if (m_hp >= 10)
+            {
+                m_hp = 10;
+            }
+            Debug.Log(m_hp);
+        }
         public abstract void UnitUpdate();
         
         public abstract void UnitFixedUpdate();
         public int GetHP() => m_hp;
+
+        
     }
 }

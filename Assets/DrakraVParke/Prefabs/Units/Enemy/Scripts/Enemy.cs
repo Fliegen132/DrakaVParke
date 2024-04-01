@@ -23,7 +23,6 @@ namespace DrakraVParke.Units
             _gunHandler = unit.GetComponent<GunHandler>();
             _gunHandler.SetAnim += InitWeapon;
             _gunHandler.Init();
-            
         }
     
         public override void UnitUpdate()
@@ -99,7 +98,21 @@ namespace DrakraVParke.Units
             _canMove = false;
             var effect = Resources.Load<GameObject>("KickSplash");
             Vector2 vector2 = new Vector2(unit.transform.position.x + 0.2f, unit.transform.position.y + 0.6f);
+            
+            var particle = Resources.Load<GameObject>($"{Name}Particle");
+            Vector2 vector22 = new Vector2(unit.transform.position.x + 0.2f, unit.transform.position.y + 0.6f);
             Object.Instantiate(effect, vector2, Quaternion.identity);
+            GameObject go = Object.Instantiate(particle, vector22, Quaternion.identity);
+            if (unit.transform.localScale.x == 1)
+            {
+                go.GetComponent<ParticleSystem>().startSize = 0.4f;
+                go.transform.localScale = new Vector3(-1, 1,1);
+            }
+            else
+            {
+                go.transform.localScale = new Vector3(1, 1,1);
+                go.GetComponent<ParticleSystem>().startSize = 1f;
+            }
             if (type == DamageType.Default)
             {
                 unit.GetComponent<Animator>().Play(Name + "TakeDamage");
@@ -124,11 +137,13 @@ namespace DrakraVParke.Units
         protected override void Dead()
         {
             base.Dead();
+            dead = true;
             unit.GetComponent<GunHandler>().KickOut();
             unit.GetComponent<BoxCollider2D>().enabled = false;
             unit.GetComponent<Animator>().SetBool("Attack", false);
             unit.GetComponent<Animator>().SetBool("AttackNoGun", false);
             unit.GetComponent<Animator>().Play(Name + "Dead");
+            unit.transform.Find("Fade").gameObject.SetActive(false);
         }
 
         private bool _haveGun;

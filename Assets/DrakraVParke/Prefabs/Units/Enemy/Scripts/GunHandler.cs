@@ -33,6 +33,7 @@ public class GunHandler : MonoBehaviour
             {
                 var res = Resources.Load<GameObject>(gunName);
                 gun = Instantiate(res, gunPoint);
+                
             } 
             
         }
