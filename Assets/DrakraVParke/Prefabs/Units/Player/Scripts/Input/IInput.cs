@@ -1,7 +1,6 @@
 using _2048Figure.Architecture.ServiceLocator;
 using DrakraVParke.Player;
 using DrakraVParke.Units;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 namespace DrakaVParke.Player
@@ -46,9 +45,16 @@ namespace DrakaVParke.Player
         #endregion
         
         protected float _downSpeed = 4;
-        protected float _upSpeed = 8;
+        private float _upSpeed = 10;
 
         private Transform gunPoint;
+
+        /// <summary>
+        /// Для урона
+        /// </summary>
+        private int _baseDamage = 1;
+        private int _hardDamage = 1;
+        
         public IInput(Unit player , AnimationController anim)
         {
             _player = player;
@@ -97,6 +103,7 @@ namespace DrakaVParke.Player
         
         private bool TryGetHeart()
         {
+            Debug.Log("HEEEEEEEEEEEEARTTRRRYYY");
             if (gunPoint != null)
             {
                 Collider2D hit = Physics2D.OverlapCircle(new Vector2(gunPoint.position.x + _direct / 2, gunPoint.position.y), 1.5f, LayerMask.GetMask("Weapon"));
@@ -114,6 +121,7 @@ namespace DrakaVParke.Player
         }
         protected void Attack()
         {
+            int damage = _baseDamage;
             DamageType damageType = DamageType.Default;
             if (_jump)
             {
@@ -122,7 +130,6 @@ namespace DrakaVParke.Player
             }
             else if (_sitDown)
             {
-               
                 PlayAnim(SIT_KICK_ANIM);
             }
             else if (_jump == false)
@@ -132,6 +139,7 @@ namespace DrakaVParke.Player
                 {
                     int damageTypeValue = PlayAnim(TURN_KICK_ANIM);
                     damageType = (DamageType)(damageTypeValue + 1);
+                    damage = _hardDamage;
                     kickCount = 0;
                 }
                 else
@@ -141,8 +149,9 @@ namespace DrakaVParke.Player
                 }
             }
 
-            if (!TryGetWeapon() || !TryGetHeart())
-                HitDetected(damageType);
+            if (!TryGetWeapon())
+                if(!TryGetHeart())
+                    HitDetected(damageType, damage);
         }
 
         protected int PlayAnim(string[] anim)
@@ -156,7 +165,7 @@ namespace DrakaVParke.Player
             _animatorController.SetAnimation(_player.GetBehaviour().Name + anim);
         }
 
-        protected void HitDetected(DamageType type)
+        private void HitDetected(DamageType type, int damage)
         {
             RaycastHit2D[] hit = Physics2D.RaycastAll(
                 new Vector2(_player.transform.position.x, _player.transform.position.y + 0.5f), new Vector2(_direct, 0),
@@ -169,7 +178,7 @@ namespace DrakaVParke.Player
                     {
                         if (hit[i].collider.GetComponent<Unit>().CompareTag("Enemy"))
                         {
-                            hit[i].collider.GetComponent<Unit>().GetBehaviour().TakeDamage(1, type);
+                            hit[i].collider.GetComponent<Unit>().GetBehaviour().TakeDamage(damage, type);
                             int a = Random.Range(1, 3);
                             if(type == DamageType.SuperHard)
                                 PlayAudio("EXTRAKICK");
@@ -277,7 +286,7 @@ namespace DrakaVParke.Player
             _player.GetComponent<BoxCollider2D>().size = new Vector2(1, _colliderDefSize);
             _sitDown = false;
             PlayAnim(UPPER_CUT_ANIM);
-            HitDetected(DamageType.SuperHard);
+            HitDetected(DamageType.SuperHard, _hardDamage);
         }
 
         private void PlayAudio(string name)

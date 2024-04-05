@@ -9,20 +9,24 @@ public static class AchievementsManager
     public static List<string> DoneAchievements = new List<string>();
 
     #region statsWholeGame
-    public static int RatKillsCount;
-    public static int PigeonKillsCount;
+
+    public static int RatKillsCount { get; set; }
+    public static int PigeonKillsCount{ get; set; }
+    public static int KillCount{ get; set; }
     
-    public static int GrannySkinsCount;
-    public static int CatSkinsCount;
+    public static int GrannySkinsCount{ get; set; }
+    public static int CatSkinsCount{ get; set; }
+    public static int SkinsCount{ get; set; }
     
-    public static int AdCount;
-    public static int KnifeCount;
+    public static int AdCount{ get; set; }
+    public static int KnifeCount{ get; set; }
+    
     #endregion
 
     #region statsInCurrentGame
-    private static int JumpCount;
-    private static int SitDownCount;
-    
+    public static int JumpCount{ get; set; }
+    public static int SitDownCount{ get; set; }
+    public static float Time{ get; set; }
     #endregion
     
     
@@ -69,93 +73,26 @@ public static class AchievementsManager
     private static int i;
     public static void Init()
     {
-        Bridge.storage.Get("i", IOnStorageGetCompleted);
+        i = PlayerPrefs.GetInt("i");
         if (i > 0)
         {
             for (int j = 0; j < i; j++)
             {
-                Bridge.storage.Get($"achievement{j}", AcOnStorageGetCompleted);  
+               DoneAchievements.Add(PlayerPrefs.GetString($"achievement{j}"));  
             }
         }
-        GetData("RatKillsCount", (success, data) =>
-        {
-            if (success && data != null)
-            {
-                RatKillsCount = Int32.Parse(data);
-            }
-        });
-        
-        GetData("PigeonKillsCount", (success, data) =>
-        {
-            if (success && data != null)
-            {
-                PigeonKillsCount = Int32.Parse(data);
-            }
-        });
-        GetData("GrannySkinsCount", (success, data) =>
-        {
-            if (success && data != null)
-            {
-                GrannySkinsCount = Int32.Parse(data);
-            }
-        });
-        GetData("CatSkinsCount", (success, data) =>
-        {
-            if (success && data != null)
-            {
-                CatSkinsCount = Int32.Parse(data);
-            }
-        });
-        GetData("AdCount", (success, data) =>
-        {
-            if (success && data != null)
-            {
-                AdCount = Int32.Parse(data);
-            }
-        });
-        GetData("KnifeCount", (success, data) =>
-        {
-            if (success && data != null)
-            {
-                KnifeCount = Int32.Parse(data);
-            }
-        });
+        RatKillsCount = PlayerPrefs.GetInt($"RatKillsCount");  
+        PigeonKillsCount = PlayerPrefs.GetInt($"PigeonKillsCount");  
+        GrannySkinsCount = PlayerPrefs.GetInt($"GrannySkinsCount");  
+        CatSkinsCount = PlayerPrefs.GetInt($"CatSkinsCount");  
+        AdCount = PlayerPrefs.GetInt($"AdCount");  
+        KnifeCount = PlayerPrefs.GetInt($"KnifeCount");  
     }
-    
-    private static void GetData(string key, Action<bool, string> callback)
-    {
-        Bridge.storage.Get(key, (success, data) =>
-        {
-            callback(success, data);
-        });
-    }
-
-    private static void IOnStorageGetCompleted(bool success, string data)
-    {
-        if (success)
-        {
-            if (data != null) {
-               i = Int32.Parse(data);
-            }
-        }
-    }
-    
-    private static void AcOnStorageGetCompleted(bool success, string data)
-    {
-        if (success)
-        {
-            if (data != null) {
-                DoneAchievements.Add(data);
-            }
-        }
-    }
-
     public static void EndGame()
     {
         JumpCount = 0;
         SitDownCount = 0;
-        
-        
+        Time = 0; 
     }
 
     public static void IncreaseKillCount(string name)
@@ -169,6 +106,7 @@ public static class AchievementsManager
             RatKillsCount++;
         }
 
+        KillCount = RatKillsCount + PigeonKillsCount;
         if (PigeonKillsCount >= 10 && !DoneAchievements.Contains("PigeonLover10"))
         {
             AchievementsView.ViewAchievement(GetSprite("PigeonLover10"), "Любитель голубей");
@@ -205,15 +143,15 @@ public static class AchievementsManager
         }
         
         
-        if (RatKillsCount + PigeonKillsCount >= 10 && !DoneAchievements.Contains("Newbie"))
+        if (KillCount >= 10 && !DoneAchievements.Contains("Newbie"))
         {
             AchievementsView.ViewAchievement(GetSprite("Newbie"), "Новичок");
         }
-        if (RatKillsCount + PigeonKillsCount >= 30 && !DoneAchievements.Contains("Experienced1"))
+        if (KillCount >= 30 && !DoneAchievements.Contains("Experienced1"))
         {
             AchievementsView.ViewAchievement(GetSprite("Experienced1"), "Бывалый");
         }
-        if (RatKillsCount + PigeonKillsCount >= 60 && !DoneAchievements.Contains("Experienced2"))
+        if (KillCount >= 60 && !DoneAchievements.Contains("Experienced2"))
         {
             AchievementsView.ViewAchievement(GetSprite("Experienced2"), "Опытный");
         }
@@ -274,7 +212,7 @@ public static class AchievementsManager
     public static void DropKnife()
     {
         KnifeCount++;
-        if (KnifeCount >= 10 && !DoneAchievements.Contains("SymmetricalAnswer15"))
+        if (KnifeCount >= 15 && !DoneAchievements.Contains("SymmetricalAnswer15"))
         {
             AchievementsView.ViewAchievement(GetSprite("SymmetricalAnswer15"), "Симметричный ответ");
         }
@@ -295,6 +233,7 @@ public static class AchievementsManager
     public static void CheckGrannyCount(int count)
     {
         GrannySkinsCount++;
+        SkinsCount++;
         if (GrannySkinsCount+1 == count && !DoneAchievements.Contains("GrannyLover"))
         {
             AchievementsView.ViewAchievement(GetSprite("GrannyLover"), "Бабушкин любимчик");
@@ -304,6 +243,7 @@ public static class AchievementsManager
     public static void CheckCatCount(int count)
     {
         CatSkinsCount++;
+        SkinsCount++;
         if (CatSkinsCount+1 == count && !DoneAchievements.Contains("CatLover"))
         {
             AchievementsView.ViewAchievement(GetSprite("CatLover"), "Кошатник");
@@ -316,34 +256,40 @@ public static class AchievementsManager
             AchievementsView.ViewAchievement(GetSprite("kamikaze"), "Камикадзе");
     }
 
-    public static void CheckTime(float time)
+    public static void CheckTime()
     {
-        if (time >= 10 && !DoneAchievements.Contains("MoneyTime1"))
+        if (Time >= 60 && !DoneAchievements.Contains("MoneyTime1"))
         {
             AchievementsView.ViewAchievement(GetSprite("MoneyTime1"), "Время деньги");
         }
         
-        if (time >= 360 && !DoneAchievements.Contains("MoneyTime6"))
+        if (Time >= 360 && !DoneAchievements.Contains("MoneyTime6"))
         {
             AchievementsView.ViewAchievement(GetSprite("MoneyTime6"), "Время деньги");
         }
         
-        if (time >= 900 && !DoneAchievements.Contains("MoneyTime15"))
+        if (Time >= 900 && !DoneAchievements.Contains("MoneyTime15"))
         {
             AchievementsView.ViewAchievement(GetSprite("MoneyTime15"), "Время деньги");
         }
         
-        if (time >= 1800 && !DoneAchievements.Contains("MoneyTime30"))
+        if (Time >= 1800 && !DoneAchievements.Contains("MoneyTime30"))
         {
             AchievementsView.ViewAchievement(GetSprite("MoneyTime30"), "Непобедимый");
         }
     }
 
-
     public static Sprite GetSprite(string spriteName)
     {
         var sprite = Sprites.Where(a => a.name == spriteName).First();
-        DoneAchievements.Add(spriteName);
+        if(!DoneAchievements.Contains(spriteName))
+            DoneAchievements.Add(spriteName);
+        return sprite;
+    }
+    
+    public static Sprite GetSpriteView(string spriteName)
+    {
+        var sprite = Sprites.Where(a => a.name == spriteName).First();
         return sprite;
     }
 }

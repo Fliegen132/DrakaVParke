@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Reflection;
 using _2048Figure.Architecture.ServiceLocator;
 using DrakaVParke.Architecture;
 using DrakraVParke.Units;
@@ -50,9 +51,9 @@ public class HeartBehaviour : MonoBehaviour
 
     private void Done()
     {
-        hasReachedTarget = true; 
         UnitList.Player.GetComponent<Unit>().GetBehaviour().AddHP(3);
         ServiceLocator.current.Get<ViewModel>().UpdateHP();
+        hasReachedTarget = true; 
         gameObject.SetActive(false);
         isMoving = false;
     }

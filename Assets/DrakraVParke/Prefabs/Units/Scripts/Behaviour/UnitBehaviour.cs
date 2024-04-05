@@ -1,4 +1,6 @@
 ﻿using _2048Figure.Architecture.ServiceLocator;
+using DrakaVParke.Architecture;
+using DrakraVParke.Architecture.Menu;
 using UnityEngine;
 
 namespace DrakraVParke.Units
@@ -16,7 +18,7 @@ namespace DrakraVParke.Units
         protected GameObject unit;
         public string Name;
 
-        protected bool dead = false;
+        public bool dead = false;
 
         private ViewModelScore _viewModelScore;
         public UnitBehaviour()
@@ -46,8 +48,11 @@ namespace DrakraVParke.Units
             _viewModelScore.UpdateScore();
             AchievementsManager.IncreaseKillCount(Name);
         }
+        
         public void AddHP(int newHP)
         {
+            if(DataMenu._1hp)
+                return;
             m_hp += newHP;
             if (m_hp >= 10)
             {
@@ -55,6 +60,7 @@ namespace DrakraVParke.Units
             }
             Debug.Log(m_hp);
         }
+        
         public abstract void UnitUpdate();
         
         public abstract void UnitFixedUpdate();

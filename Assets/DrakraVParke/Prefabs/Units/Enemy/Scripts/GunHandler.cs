@@ -19,7 +19,6 @@ public class GunHandler : MonoBehaviour
     public void Init()
     {
         int a = Random.Range(0, 3);
-        Debug.Log(a);
         if (a == 0)
         {
             _haveGun = false;

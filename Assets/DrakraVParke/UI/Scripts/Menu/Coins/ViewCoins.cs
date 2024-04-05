@@ -1,4 +1,5 @@
 using _2048Figure.Architecture.ServiceLocator;
+using InstantGamesBridge;
 using TMPro;
 using UnityEngine;
 
@@ -8,22 +9,20 @@ public class ViewCoins : MonoBehaviour, IService
     public void Start()
     {
         _textCoins.text = $"{CoinsModel.GetCoinsCount()}";
+        Bridge.advertisement.ShowBanner();
     }
 
-    private void Update()
+    public void Buy(int price)
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            CoinsModel.AddCoins(300);
-            _textCoins.text = $"{CoinsModel.GetCoinsCount()}";
-        }
-    }
-
-    public bool Buy(int price)
-    {
-        bool can = CoinsModel.SendCoin(price);
+        CoinsModel.SendCoin(price);
         _textCoins.text = $"{CoinsModel.GetCoinsCount()}";
-        return can;
+    }
+
+    public bool TryBuy(int price)
+    {
+        if (CoinsModel.GetCoinsCount() >= 300)
+            return true;
+        return false;
     }
 
     public void UpdateText()

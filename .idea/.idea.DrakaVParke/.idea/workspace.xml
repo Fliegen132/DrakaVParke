@@ -8,80 +8,88 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Heart/Scripts/HeartBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/Ball/Ball.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/TimerView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Menu/CharacterTouch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Sound/Scripts/SoundData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Architecture/GameBehaviour/NightSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E97D8420-4F8D-4AEF-92B5-38C5BAB948F1/67/94e7e247/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/ViewBuySkin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/SkinRandomize.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@9.0.3/Runtime/SpriteLib/SpriteLibraryAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FadeBehavour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Score/ViewModelScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Achievements/AchievementsView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Achievements/DoneChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/HeartCarrier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Sound/Scripts/SoundStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/SkinImage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/Coins/CoinsModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/SQLite/SQLite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Heart/Scripts/HeartBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/TimerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Menu/CharacterTouch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/SkinRandomize.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/E97D8420-4F8D-4AEF-92B5-38C5BAB948F1/aa/c6e3a6fc/02000245.il" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Achievements/AchievementsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Achievements/AchievementsDescription.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/EndGame.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/HeartCarrier.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/Coins/CoinsModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/StatsView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97436DF4-40CA-4628-84C5-332C1D8EBBE7/e8/c5a67e92/EditorPrefs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DrakraVParke/Sound/Scripts/SoundSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/GameBehaviour/UnitList.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/Ball/EnemyBall.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/GunHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/Ball/Ball.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Input/SwipeManagerUnity.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/GameBehaviour/NightSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/Scripts/AdvertisementPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Unblik.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Menu/CharacterTouch.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Menu/CharacterChooser.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Menu/DataMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Achievements/IAchievements.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Score/ViewScore.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Score/ModelScore.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Bootstrap/Bootstrap.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/PlayGame.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/Enemy/BallCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/FadeBehavour.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Tutorial.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Scripts/Behaviour/UnitBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Player/ModelHP.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Player/ViewHP.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/GameBehaviour/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/SkinRandomize.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/Player/CatCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/ServiceLocator/GAMEPLAY_SERVICELOCATOR.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Achievements/Renamed.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Achievements/AchievementsDescription.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/ClickBuySkin.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Achievements/DoneChecker.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Input/DesktopInput.cs" />
         <option value="$PROJECT_DIR$/Assets/InstantGamesBridge/Scripts/Modules/Storage/StorageModule.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/ServiceLocator/MAINMENU_SERVICELOCATOR.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/Coins/ViewCoins.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/Coins/CoinsModel.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Input/MobileInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/HeartCarrier.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/SkinRandomize.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/GunHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/StatsView.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Tutorial.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Achievements/AchievementsDescription.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Sound/Scripts/SoundData.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Sound/Scripts/SoundStart.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Sound/Scripts/SoundSwitcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/StartGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Bootstrap/Bootstrap.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Achievements/AchievementsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/Coins/CoinsModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Achievements/DoneChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/PlayGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/Player/BabushkaCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/Player/CatCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Achievements/AchievementsView.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Menu/SkinSelector.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/ViewBuySkin.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Menu/DataMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/EndGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/Achievements/AchievementsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/TimerView.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/StatsView.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/StartGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/HeartCarrier.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/UnitCreator/Player/BabushkaCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Weapons/Scripts/WeaponBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Input/IInput.cs" />
         <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Heart/Scripts/HeartBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/TimerView.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/ViewBuySkin.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Weapons/Scripts/WeaponBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/Coins/ViewCoins.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Player/Scripts/Input/IInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Scripts/Behaviour/UnitBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/UI/Scripts/Menu/SkinImage.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Architecture/GameBehaviour/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/DrakraVParke/Prefabs/Units/Enemy/Scripts/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -96,7 +104,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
@@ -149,6 +157,12 @@
       <workItem from="1711878553021" duration="29255000" />
       <workItem from="1711954819405" duration="3412000" />
       <workItem from="1711978539543" duration="6586000" />
+      <workItem from="1711995243501" duration="473000" />
+      <workItem from="1712128855791" duration="5451000" />
+      <workItem from="1712171285333" duration="780000" />
+      <workItem from="1712202656088" duration="25227000" />
+      <workItem from="1712239416977" duration="17983000" />
+      <workItem from="1712317815635" duration="6223000" />
     </task>
     <servers />
   </component>
@@ -226,9 +240,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="754" y="239" key="RiderGenerateDialog/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1711457297811" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1711821072895">
+    <state x="491" y="165" key="SettingsEditor" timestamp="1712212056574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1711821072895" />
+    <state x="491" y="165" key="SettingsEditor/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1712212056574" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1712248515946">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.92.1920.1040@0.0.1920.1040" timestamp="1712248515946" />
   </component>
 </project>

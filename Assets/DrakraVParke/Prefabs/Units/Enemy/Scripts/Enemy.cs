@@ -1,6 +1,4 @@
-using System.Threading.Tasks;
 using DrakaVParke.Architecture;
-using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 namespace DrakraVParke.Units
@@ -8,10 +6,14 @@ namespace DrakraVParke.Units
     public class Enemy : UnitBehaviour
     {
         private Transform _target;
-        private float _speed = 5;
         private float _direct;
         private bool _canMove = true;
         private GunHandler _gunHandler;
+        
+        
+        private int damage = 1; //<= урон врагов
+        private float _speed = 5;// <= скорость врагов
+
         public Enemy(string name, GameObject enemy)
         {
             Name = name;
@@ -27,7 +29,14 @@ namespace DrakraVParke.Units
     
         public override void UnitUpdate()
         {
+            if (UnitList.Player.GetComponent<Unit>().GetBehaviour().dead)
+            {
+                PlayerDeadMove();
+                return;
+            }
+
             Move();
+            
         }
 
         private void Move()
@@ -67,6 +76,32 @@ namespace DrakraVParke.Units
             }
         }
 
+        private bool isRight;
+
+        private void PlayerDeadMove()
+        {
+            unit.GetComponent<Animator>().SetBool("Attack", false);
+            unit.GetComponent<Animator>().SetBool("AttackNoGun", false);
+
+            if (unit.transform.position.x >= 8f)
+                isRight = false;
+            if(unit.transform.position.x <= -8f)
+                isRight = true;
+            
+            if (isRight)
+            {
+                _direct = 1;
+                unit.transform.localScale = new Vector3(1, 1, 1);
+            }
+            else
+            {
+                _direct = -1;
+                unit.transform.localScale = new Vector3(-1, 1, 1);
+            }
+            Vector3 direction = new Vector3(_speed * _direct, 0);
+            unit.transform.Translate(direction * Time.deltaTime);
+        }
+
         private void Attack()
         {
             if(_gunHandler._haveGun)
@@ -84,10 +119,28 @@ namespace DrakraVParke.Units
             {
                 foreach(var hitInfo in hit)
                 {
-                    Unit unit = hitInfo.collider.GetComponent<Unit>();
-                    if (unit != null && unit.CompareTag("Player"))
+                    Unit player = hitInfo.collider.GetComponent<Unit>();
+                    if (player != null && player.CompareTag("Player") && !player.GetBehaviour().dead)
                     {
-                        unit.GetBehaviour().TakeDamage(1, DamageType.Default);
+                        if (player.transform.localScale.x == unit.transform.localScale.x)
+                        {
+                            if(player.GetComponent<BoxCollider2D>().offset.y < 1)
+                                player.GetComponent<Animator>().Play(player.GetBehaviour().Name + "SitTakeDamageBehind");
+                            else
+                                player.GetComponent<Animator>().Play(player.GetBehaviour().Name + "TakeDamageBehind");
+
+                        }
+                        else
+                        {
+                            if(player.GetComponent<BoxCollider2D>().offset.y < 1)
+                                player.GetComponent<Animator>().Play(player.GetBehaviour().Name + "SitTakeDamageFront");
+                            else
+                                player.GetComponent<Animator>().Play(player.GetBehaviour().Name + "TakeDamageFront");
+
+
+                        }
+                        player.GetBehaviour().TakeDamage(damage, DamageType.Default);
+                        
                     }
                 }
             }

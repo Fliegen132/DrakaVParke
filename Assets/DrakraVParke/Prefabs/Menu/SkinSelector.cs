@@ -1,8 +1,5 @@
-using System;
 using DrakraVParke.Architecture.Menu;
-using InstantGamesBridge;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class SkinSelector : MonoBehaviour
@@ -23,18 +20,18 @@ public class SkinSelector : MonoBehaviour
 
     [SerializeField] private ViewBuySkin _viewBuySkin;
 
-    [SerializeField] private GameObject _openSkinBtn;
     private string _skinName;
     private static int i;
 
     private void Start()
     {
-        Init();
-        _openSkinBtn.SetActive(false);
-        _skinName = "Babushka";
         Load();
+        Init();
+        _skinName = "Babushka";
         DataMenu.AvailableSkins.Add("Babushka");
         DataMenu.AvailableSkins.Add("cat");
+        for(int i = 0; i < DataMenu.AvailableSkins.Count; i++)
+            Debug.Log(DataMenu.AvailableSkins[i]);
         UpdateSkins();
     }
 
@@ -45,41 +42,16 @@ public class SkinSelector : MonoBehaviour
     }
     private void ILoad()
     {
-        Bridge.storage.Get("i", IOnStorageGetCompleted);
-        if (i > 0)
-        {
-            for (int j = 0; j < i; j++)
-            {
-                Bridge.storage.Get($"skinCount", IOnStorageGetCompleted);  
-            }
-        }
+        i = PlayerPrefs.GetInt("skinCount");
     }
 
     private void SkinLoad()
     {
         for (int j = 0; j < i; j++)
         {
-            Bridge.storage.Get($"skin{j}", SkinOnStorageGetCompleted);
-        }
-    }
-
-    private void SkinOnStorageGetCompleted(bool success, string data)
-    {
-        if (success)
-        {
-            if (data != null) {
-                DataMenu.AvailableSkins.Add(data);
-            }
-        }
-    }
-    
-    private void IOnStorageGetCompleted(bool success, string data)
-    {
-        if (success)
-        {
-            if (data != null) {
-                i = Int32.Parse(data);
-            }
+            string a = PlayerPrefs.GetString($"skin{j}");
+            DataMenu.AvailableSkins.Add(a);
+            Debug.Log(a);
         }
     }
     
@@ -89,7 +61,6 @@ public class SkinSelector : MonoBehaviour
         {
             if (DataMenu.AvailableSkins.Contains(babushkaSkins[i].name))
             {
-                _openSkinBtn.SetActive(true);
                 babushkaSkins[i].transform.GetChild(0).gameObject.SetActive(false);
                 babushkaSkins[i].GetComponent<Image>().color = Color.white;
             }
@@ -99,7 +70,6 @@ public class SkinSelector : MonoBehaviour
         {
             if (DataMenu.AvailableSkins.Contains(catSkins[i].name))
             {
-                _openSkinBtn.SetActive(true);
                 catSkins[i].transform.GetChild(0).gameObject.SetActive(false);
                 catSkins[i].GetComponent<Image>().color = Color.white;
             }
@@ -129,6 +99,8 @@ public class SkinSelector : MonoBehaviour
     
     private void Update()
     {
+        if(_viewBuySkin.WindowOpen)
+            return;
         int currentItem = Mathf.RoundToInt((0 - content.localPosition.x / (listItem.rect.width + hor.spacing)));
         Debug.Log(currentItem);
         currentItem = Mathf.Clamp(currentItem, -2, maxIndex-2);
@@ -142,22 +114,17 @@ public class SkinSelector : MonoBehaviour
             Debug.Log(skins[currentItem+2].name);
             DataMenu.HeroSkin = skins[currentItem + 2].name;
             _skinName = skins[currentItem + 2].name;
-            if (!DataMenu.AvailableSkins.Contains(skins[currentItem + 2].name))
-            {
-                _openSkinBtn.SetActive(true);
-            }
-            else
-            {
-                _openSkinBtn.SetActive(false);
-            }
+            
         }
     }
 
     public string GetSkinName() => _skinName;
 
-    public void ClickForBuy()
+    public void ClickForBuy(string Name)
     {
+        _viewBuySkin.SetNameSelector(this);
+        DataMenu.BuyedHeroSkin = Name;
         _viewBuySkin.OpenShop();
-        _viewBuySkin.SetNameSkin(DataMenu.HeroSkin);
+        
     }
 }

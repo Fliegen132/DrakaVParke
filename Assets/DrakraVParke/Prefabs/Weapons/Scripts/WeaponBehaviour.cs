@@ -28,6 +28,7 @@ public class WeaponBehaviour : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 8, ForceMode2D.Impulse);
             gameObject.GetComponent<BoxCollider2D>().enabled = true;
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = 50;
+            EnableGun();
         }
         else
         {
@@ -48,7 +49,7 @@ public class WeaponBehaviour : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(false);
     }
 
-    public void EnableGun()
+    private void EnableGun()
     {
         StartCoroutine(EnableGO());
     }
@@ -56,7 +57,10 @@ public class WeaponBehaviour : MonoBehaviour
     private IEnumerator EnableGO()
     {
         yield return new WaitForSeconds(4f);
-        Destroy(gameObject);
+        if (transform.parent == null)
+        {
+            Destroy(gameObject);
+        }
     }
     
     private void OnTriggerEnter2D(Collider2D collision)

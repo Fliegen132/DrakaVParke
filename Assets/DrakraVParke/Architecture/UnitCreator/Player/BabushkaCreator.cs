@@ -1,8 +1,10 @@
 using DrakaVParke.Architecture;
 using DrakaVParke.Player;
+using DrakraVParke.Architecture.Menu;
 using DrakraVParke.Units;
 using InstantGamesBridge;
 using UnityEngine;
+using UnityEngine.Audio;
 using DeviceType = InstantGamesBridge.Modules.Device.DeviceType;
 
 namespace DrakraVParke.Architecture
@@ -16,6 +18,10 @@ namespace DrakraVParke.Architecture
             GameObject go = Object.Instantiate(player);
             Unit unit = go.AddComponent<Unit>();
             go.AddComponent<AudioSource>().playOnAwake = false;
+            AudioMixer audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+            AudioMixerGroup[] audioMixGroup = audioMixer.FindMatchingGroups("Master");
+            
+            go.GetComponent<AudioSource>().outputAudioMixerGroup = audioMixGroup[2];
             
             if (Bridge.device.type == DeviceType.Mobile)
             {
@@ -28,7 +34,10 @@ namespace DrakraVParke.Architecture
                 Debug.Log("desktop");
             }
             unit.Init(new Player.Player("Babushka",go, input));
-            unit.GetBehaviour().SetHp(10);
+            if(DataMenu._1hp)
+                unit.GetBehaviour().SetHp(1);
+            else
+                unit.GetBehaviour().SetHp(10);
             UnitList.Player = go;
             return go;
         }

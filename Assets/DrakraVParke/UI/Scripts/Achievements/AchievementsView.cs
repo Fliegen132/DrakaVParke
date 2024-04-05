@@ -1,7 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using _2048Figure.Architecture.ServiceLocator;
-using InstantGamesBridge;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -30,6 +27,10 @@ public class AchievementsView : MonoBehaviour
 
         AchievementsManager.Init();
         CoinsModel.Init();
+        for (int i = 0; i < AchievementsManager.DoneAchievements.Count; i++)
+        {
+            Debug.Log(AchievementsManager.DoneAchievements[i]);
+        }
     }
 
     public static void ViewAchievement(Sprite icon, string text)
@@ -48,16 +49,11 @@ public class AchievementsView : MonoBehaviour
     {
         for(int i =0; i < AchievementsManager.DoneAchievements.Count; i++)
         {
-            Bridge.storage.Set($"achievement{i}", AchievementsManager.DoneAchievements[i], OnStorageSetCompleted);
+            PlayerPrefs.SetString($"achievement{i}", AchievementsManager.DoneAchievements[i]);
         }
         
-        Bridge.storage.Set("i", AchievementsManager.DoneAchievements.Count, OnStorageSetCompleted);
-        Bridge.storage.Set($"money", CoinsModel.GetCoinsCount(), OnStorageSetCompleted);
-    }
-    
-    private void OnStorageSetCompleted(bool success)
-    {
-        Debug.Log($"OnStorageSetCompleted, success: {success}");
+        PlayerPrefs.SetInt("i", AchievementsManager.DoneAchievements.Count);
+        PlayerPrefs.SetInt($"money", CoinsModel.GetCoinsCount());
     }
 
     private IEnumerator ResetCurrentView()

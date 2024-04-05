@@ -76,7 +76,6 @@
             <e p="Menu" t="Include">
               <e p="Animation" t="Include" />
               <e p="CharacterTouch.cs" t="Include" />
-              <e p="Skins" t="Include" />
               <e p="SkinSelector.cs" t="Include" />
             </e>
             <e p="Units" t="Include">
@@ -147,6 +146,11 @@
           <e p="Scenes" t="Include" />
           <e p="Sound" t="Include">
             <e p="Resources" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="SoundData.cs" t="Include" />
+              <e p="SoundStart.cs" t="Include" />
+              <e p="SoundSwitcher.cs" t="Include" />
+            </e>
           </e>
           <e p="UI" t="Include">
             <e p="Image" t="Include">
@@ -159,7 +163,7 @@
                 </e>
               </e>
               <e p="Resources" t="Include">
-                <e p="Icon" t="Include" />
+                <e p="Skins" t="Include" />
               </e>
             </e>
             <e p="Resources" t="Include" />
@@ -177,6 +181,7 @@
                   <e p="ViewCoins.cs" t="Include" />
                 </e>
                 <e p="PlayGame.cs" t="Include" />
+                <e p="SkinImage.cs" t="Include" />
                 <e p="ViewBuySkin.cs" t="Include" />
               </e>
               <e p="Player" t="Include">

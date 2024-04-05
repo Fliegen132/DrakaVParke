@@ -1,6 +1,7 @@
 
 using System;
 using InstantGamesBridge;
+using UnityEngine;
 
 public static class CoinsModel 
 {
@@ -8,16 +9,7 @@ public static class CoinsModel
 
     public static void Init()
     {
-        Bridge.storage.Get("money", IOnStorageGetCompleted);
-    }
-    private static void IOnStorageGetCompleted(bool success, string data)
-    {
-        if (success)
-        {
-            if (data != null) {
-                _coinsCount = Int32.Parse(data);
-            }
-        }
+        _coinsCount = PlayerPrefs.GetInt("money");
     }
     public static bool SendCoin(int coins)
     {

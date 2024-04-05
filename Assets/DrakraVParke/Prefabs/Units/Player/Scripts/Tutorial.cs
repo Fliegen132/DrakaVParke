@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using _2048Figure.Architecture.ServiceLocator;
 using InstantGamesBridge;
 using TMPro;
@@ -24,17 +23,20 @@ namespace DrakraVParke.Player
         [SerializeField] private GameObject _tutorDesktop;
         [SerializeField] private GameObject _tutorMobile;
         [SerializeField] private TextMeshProUGUI text;
+        [SerializeField] private GameObject skipBtn;
+        [SerializeField] private StatsView _statsView;
         public bool isDone = false;
         private bool m_next = true;
         
         private void Awake()
         {
+            skipBtn.SetActive(false);
+            _statsView.Init();
             if (PlayerPrefs.GetInt("Totor") == 1)
             {
                 isDone = true;
                 return;
             }
-
             if (Bridge.device.type == DeviceType.Desktop)
                 _tutor = _tutorDesktop;
             else
@@ -43,6 +45,7 @@ namespace DrakraVParke.Player
             
             text.gameObject.SetActive(true);
             _tutor.SetActive(true);
+            skipBtn.SetActive(true);
         }
 
         private void Update()
@@ -196,6 +199,7 @@ namespace DrakraVParke.Player
         private IEnumerator EndTutor()
         {
             _tutor.SetActive(false);
+            skipBtn.SetActive(false);
             m_next = false;
             text.text = "Удачи в игре!";
             yield return new WaitForSeconds(2f);
@@ -227,6 +231,11 @@ namespace DrakraVParke.Player
             {
                 Y = -Input.GetTouch(0).deltaPosition.y;
             }
+        }
+
+        public void SkipTutor()
+        {
+            Done();
         }
     }
 }

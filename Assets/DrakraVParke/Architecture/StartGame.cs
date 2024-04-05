@@ -15,7 +15,6 @@ namespace DrakraVParke.Architecture
 
         private void Awake()
         {
-            Application.runInBackground = false;
         }
 
         private void Start()
